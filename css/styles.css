@@ -539,6 +539,128 @@ input[type=number] {
   border-color: #2563eb;
 }
 
+/* folder */
+
+  .folder-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        .folderBtn {
+            transition: all 0.3s ease;
+            border-radius: 10px;
+            padding: 15px;
+        }
+        .folderBtn:hover {
+            background-color: #f1f5f9;
+            transform: translateY(-2px);
+        }
+        .folderContent {
+            transition: all 0.3s ease;
+        }
+        .cursor-pointer {
+            cursor: pointer;
+        }
+        .file-item {
+            border: none;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            transition: all 0.2s ease;
+        }
+        .file-item:hover {
+            background-color: #f1f5f9;
+        }
+        .file-icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            font-size: 1.5rem;
+        }
+        .user-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #2563eb;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        .btn-action {
+            border-radius: 8px;
+            padding: 6px 12px;
+            font-weight: 500;
+        }
+        .date-section {
+            background-color: white;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .date-section.bg-light {
+            background-color: #f8fafc !important;
+        }
+        .folder-view {
+            display: none;
+        }
+        .folder-view.active {
+            display: block;
+        }
+        .folder-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .folder-grid .folderBtn {
+            width: 120px;
+            text-align: center;
+        }
+        .back-btn {
+            background-color: #e9ecef;
+            border: none;
+            border-radius: 8px;
+            padding: 8px 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s ease;
+        }
+        .back-btn:hover {
+            background-color: #dee2e6;
+        }
+        .header-actions {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        .upload-btn {
+            position: relative;
+            overflow: hidden;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+        .upload-btn input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            cursor: pointer;
+        }
+
 /* tab */
 .tab{
     color: #6b7280;
@@ -549,11 +671,13 @@ input[type=number] {
     background: #2563eb;
   color: white;
   box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
+  font-weight: bold;
 }
 .tab:hover{
 background: rgba(37, 99, 235, 0.1);
   color: #2563eb;
   box-shadow: none;
+    font-weight: bold;
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   color: #fff !important;
