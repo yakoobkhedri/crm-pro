@@ -162,6 +162,155 @@
       </form>
     </div>
   </div>
+  <div class="modal fade" id="imageGallery" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog max-w-800">
+      <form class="modal-content border-0 rounded-16 ">
+        <div class="modal-header">
+          <h1 class="modal-title fs-20 fw-bold" id="exampleModalLabel">01.jpg</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="swiper gallery">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img alt="img" src="images/68edcb68598e7_1760414568f.jpg" class="w-100 rounded-8 d-block">
+              </div>
+              <!-- <div class="swiper-slide">
+                 <img alt="img" src="images/68edcb68598e7_1760414568f.jpg" class="w-100 rounded-8 d-block">
+               </div>
+               <div class="swiper-slide">
+                 <img alt="img" src="images/68edcb68598e7_1760414568f.jpg" class="w-100 rounded-8 d-block">
+               </div> -->
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="modal fade" id="rendersGallery" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog max-w-800">
+      <form class="modal-content border-0 rounded-16 ">
+        <div class="modal-header">
+          <h1 class="modal-title fs-20 fw-bold" id="exampleModalLabel">Screenshot 2025-09-04 173819.jpg</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="swiper gallery">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img alt="img" src="images/68e8cfd249826_1760088018.jpg" class="w-100 max-h-70vh rounded-8 d-block">
+              </div>
+              <!-- <div class="swiper-slide">
+                 <img alt="img" src="images/68e8cfd249826_1760088018.jpg" class="w-100 max-h-70vh rounded-8 d-block">
+               </div>
+               <div class="swiper-slide">
+                 <img alt="img" src="images/68e8cfd249826_1760088018.jpg" class="w-100 max-h-70vh rounded-8 d-block">
+               </div> -->
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="modal fade" id="commentModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog max-w-800">
+      <form class="modal-content border-0 rounded-16 ">
+        <div class="modal-header gap-3 justify-content-start align-items-center">
+          <button type="button"
+            class="ms-0 d-flex align-items-center justify-content-center gap-1 transition border-secondary border p-0 btn btn-outline-secondary w-80 h-38 rounded-8"
+            data-bs-dismiss="modal" aria-label="Close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+              class="bi bi-arrow-left-short flex-shrink-0" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5" />
+            </svg>
+            <p class="mb-0">Back</p>
+          </button>
+          <div>
+            <h3 class="modal-title fs-20 fw-bold" id="exampleModalLabel">Image Comments</h3>
+            <p class="mb-0 text-muted">Design - ویلای حسین</p>
+          </div>
+        </div>
+        <div class="modal-body p-4">
+          <div class="mb-4 bg-light rounded-8 p-3">
+            <img alt="img" src="images/68edcb68598e7_17604145685.jpg"
+              class="w-100 max-h-70vh rounded-8 d-block shadow-3 max-h-400">
+            <h3 class="mt-3 text-center fw-bold">01.jpg</h3>
+            <div class="d-flex align-items-center justify-content-center gap-3 mb-1 flex-wrap fw-bold">
+              <div class="user-avatar w-24 h-24">I</div>
+              <div>
+                <div class="d-flex align-items-center gap-2 text-muted small flex-wrap">
+                  <span class="fw-medium text-dark">INVERSE Admin</span>
+                  <span>•</span>
+                  <span class="text-muted">Oct 14, 2025 - 04:02</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="card-body">
+              <form method="POST">
+                <input type="hidden" name="action" value="add_comment">
+                <div class="d-flex gap-3">
+                  <div
+                    class="comment-avatar w-40 h-40 bg-blue rounded-circle d-flex align-items-center justify-content-center text-white">
+                    I </div>
+                  <div class="flex-grow-1">
+                    <textarea class="form-control mb-2" name="comment_text" rows="3" placeholder="Add your comment..."
+                      required=""></textarea>
+                    <button type="submit" class="btn btn-primary d-flex align-items-center justify-content-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chat-fill me-2" viewBox="0 0 16 16">
+                        <path
+                          d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9 9 0 0 0 8 15" />
+                      </svg>
+                      Add Comment
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="comments-list">
+            <div class="comment-item">
+              <div class="d-flex align-items-start gap-3">
+                <div class="comment-avatar" style="background: #2563eb;">
+                  I </div>
+                <div class="flex-grow-1">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div class="d-flex align-items-center gap-2">
+                      <div class="fw-semibold">INVERSE Admin</div>
+                    </div>
+                    <small class="text-muted">Oct 14, 2025 - 04:03</small>
+                  </div>
+                  <div class="comment-text">ghrghdrtgh</div>
+                </div>
+              </div>
+            </div>
+            <div class="comment-item">
+              <div class="d-flex align-items-start gap-3">
+                <div class="comment-avatar" style="background: #2563eb;">
+                  I </div>
+                <div class="flex-grow-1">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div class="d-flex align-items-center gap-2">
+                      <div class="fw-semibold">INVERSE Admin</div>
+                    </div>
+                    <small class="text-muted">Oct 22, 2025 - 16:29</small>
+                  </div>
+                  <div class="comment-text">nghg</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
 
 
   <div id="overlay"></div>
@@ -449,7 +598,7 @@
             </div>
             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
               tabindex="0">
-              <div class="rounded-16 overflow-hidden shadow-2 border-gray-3 p-4 bg-white">
+              <div class="rounded-16 overflow-hidden shadow-2 border-gray-3 p-3 p-sm-4 bg-white">
                 <form method="POST" class="mb-3">
                   <input type="hidden" name="action" value="add_milestone">
                   <div class="row">
@@ -488,13 +637,13 @@
                     </button>
                   </div>
                   <div>
-                    <div class="folder-container">
+                    <div class="folder-container p-2 p-sm-4">
                       <!-- نمای اصلی فولدرها -->
                       <div id="mainView" class="folder-view active">
                         <div class="folder-grid">
                           <div class="folderBtn cursor-pointer" data-folder="folder1">
-                            <div class="text-center fw-bold mb-2">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
+                            <div class="text-center fw-bold mb-2 fs-14">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
                                 class="text-warning mb-2 bi bi-folder-fill d-block mx-auto" viewBox="0 0 16 16">
                                 <path
                                   d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.826a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3zm-8.322.12C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139z" />
@@ -504,8 +653,8 @@
                           </div>
 
                           <div class="folderBtn cursor-pointer" data-folder="folder2">
-                            <div class="text-center fw-bold mb-2">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
+                            <div class="text-center fw-bold mb-2 fs-14">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
                                 class="text-warning mb-2 bi bi-folder-fill d-block mx-auto" viewBox="0 0 16 16">
                                 <path
                                   d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.826a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3zm-8.322.12C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139z" />
@@ -518,7 +667,7 @@
 
                       <!-- محتوای فولدر 1 -->
                       <div id="folder1View" class="folder-view">
-                        <div class="header-actions">
+                        <div class="header-actions flex-wrap gap-3">
                           <button class="back-btn cursor-pointer d-flex align-items-center gap-1">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                               class="bi bi-arrow-left-short" viewBox="0 0 16 16">
@@ -528,7 +677,7 @@
                             <span>Back</span>
                           </button>
                           <h6 class="mb-0 fw-bold">Folder 1</h6>
-                          <div class="d-flex gap-2">
+                          <div class="d-flex gap-2 flex-wrap">
                             <button
                               class="bg-blue upload-btn btnhover1 bg-gradient-3 border-0 text-white d-flex align-items-center justify-content-center gap-1 px-3 p-2 p-sm-0 w-sm-auto w-177 h-sm-auto h-48 rounded-12 fw-bold">
                               <span class="fs-20">+</span>
@@ -547,7 +696,7 @@
                           </div>
                         </div>
 
-                        <div class="folderContent p-3">
+                        <div class="folderContent p-2">
                           <div class="date-section p-3 rounded-3 mb-4">
                             <h6 class="text-muted mb-3 fw-bold d-flex align-items-center gap-2">
                               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -572,7 +721,7 @@
                                     <div class="user-avatar">I</div>
                                     <div>
                                       <div class="fw-semibold">شعر سربازی1.pdf</div>
-                                      <div class="d-flex align-items-center gap-2 text-muted small">
+                                      <div class="d-flex align-items-center gap-2 text-muted small flex-wrap">
                                         <span class="fw-medium text-primary">INVERSE Admin</span>
                                         <span>•</span>
                                         <span>18:49</span>
@@ -632,7 +781,7 @@
                                     <div class="user-avatar">I</div>
                                     <div>
                                       <div class="fw-semibold">1054.pdf</div>
-                                      <div class="d-flex align-items-center gap-2 text-muted small">
+                                      <div class="d-flex align-items-center gap-2 text-muted small flex-wrap">
                                         <span class="fw-medium text-primary">INVERSE Admin</span>
                                         <span>•</span>
                                         <span>09:23</span>
@@ -678,7 +827,7 @@
                                     <div class="user-avatar">I</div>
                                     <div>
                                       <div class="fw-semibold">0001.dwg</div>
-                                      <div class="d-flex align-items-center gap-2 text-muted small">
+                                      <div class="d-flex align-items-center gap-2 text-muted small flex-wrap">
                                         <span class="fw-medium text-primary">INVERSE Admin</span>
                                         <span>•</span>
                                         <span>04:01</span>
@@ -718,7 +867,7 @@
 
                       <!-- محتوای فولدر 2 -->
                       <div id="folder2View" class="folder-view">
-                        <div class="header-actions">
+                        <div class="header-actions flex-wrap gap-3">
                           <button class="back-btn cursor-pointer d-flex align-items-center gap-1">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                               class="bi bi-arrow-left-short" viewBox="0 0 16 16">
@@ -728,7 +877,7 @@
                             <span>Back</span>
                           </button>
                           <h6 class="mb-0 fw-bold">Folder 2</h6>
-                          <div class="d-flex gap-2">
+                          <div class="d-flex gap-2 flex-wrap">
                             <button
                               class="bg-blue upload-btn btnhover1 bg-gradient-3 border-0 text-white d-flex align-items-center justify-content-center gap-1 px-3 p-2 p-sm-0 w-sm-auto w-177 h-sm-auto h-48 rounded-12 fw-bold">
                               <span class="fs-20">+</span>
@@ -747,7 +896,7 @@
                           </div>
                         </div>
 
-                        <div class="folderContent p-3">
+                        <div class="folderContent p-2">
                           <div class="date-section p-3 rounded-3 mb-4">
                             <h6 class="text-muted mb-3 fw-bold d-flex align-items-center gap-2">
                               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -772,7 +921,7 @@
                                     <div class="user-avatar">I</div>
                                     <div>
                                       <div class="fw-semibold">گزارش.docx</div>
-                                      <div class="d-flex align-items-center gap-2 text-muted small">
+                                      <div class="d-flex align-items-center gap-2 text-muted small flex-wrap">
                                         <span class="fw-medium text-primary">INVERSE Admin</span>
                                         <span>•</span>
                                         <span>14:30</span>
@@ -875,7 +1024,7 @@
                       <div class="row">
                         <div class="col-xxl-3 col-xl-4 col-sm-6 mb-3">
                           <div class="card cardhover rounded-16 overflow-hidden shadow-2 border-gray-3">
-                            <div class="position-relative">
+                            <div class="position-relative" data-bs-toggle="modal" data-bs-target="#imageGallery">
                               <img src="images/68edcb68598e7_1760414568.jpg" class="card-img-top"
                                 style="height: 200px; object-fit: cover; cursor: pointer;">
                               <div class="position-absolute top-0 end-0 m-2">
@@ -893,7 +1042,7 @@
                                   <small class="text-muted">04:02</small>
                                 </div>
                                 <div class="d-flex gap-1">
-                                  <button
+                                  <button data-bs-toggle="modal" data-bs-target="#commentModal"
                                     class="btn btn-sm btn-outline-primary w-49 h-40 rounded-12 d-flex align-items-center justify-content-center"
                                     title="Comments">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -931,7 +1080,8 @@
                         <div class="col-xxl-3 col-xl-4 col-sm-6 mb-3">
                           <div class="card cardhover rounded-16 overflow-hidden shadow-2 border-gray-3">
                             <div class="position-relative">
-                              <img src="images/68edcb68598e7_1760414568.jpg" class="card-img-top"
+                              <img data-bs-toggle="modal" data-bs-target="#imageGallery"
+                                src="images/68edcb68598e7_1760414568.jpg" class="card-img-top"
                                 style="height: 200px; object-fit: cover; cursor: pointer;">
                               <div class="position-absolute top-0 end-0 m-2">
                                 <div
@@ -948,7 +1098,7 @@
                                   <small class="text-muted">04:02</small>
                                 </div>
                                 <div class="d-flex gap-1">
-                                  <button
+                                  <button data-bs-toggle="modal" data-bs-target="#commentModal"
                                     class="btn btn-sm btn-outline-primary w-49 h-40 rounded-12 d-flex align-items-center justify-content-center"
                                     title="Comments">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -1049,7 +1199,8 @@
                         <div class="col-xxl-3 col-xl-4 col-sm-6 mb-3">
                           <div class="card cardhover rounded-16 overflow-hidden shadow-2 border-gray-3">
                             <div class="position-relative">
-                              <img src="images/68edcb68598e7_1760414568.jpg" class="card-img-top"
+                              <img data-bs-toggle="modal" data-bs-target="#rendersGallery"
+                                src="images/68edcb68598e7_1760414568.jpg" class="card-img-top"
                                 style="height: 200px; object-fit: cover; cursor: pointer;">
                               <div class="position-absolute top-0 end-0 m-2">
                                 <div
@@ -1071,7 +1222,7 @@
                                   <small class="text-muted">04:02</small>
                                 </div>
                                 <div class="d-flex gap-1">
-                                  <button
+                                  <button data-bs-toggle="modal" data-bs-target="#commentModal"
                                     class="btn btn-sm btn-outline-primary w-49 h-40 rounded-12 d-flex align-items-center justify-content-center"
                                     title="Comments">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -1486,6 +1637,7 @@
   </section>
 
   <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/isotope.pkgd.min.js"></script>
   <script src="js/sidebar.js"></script>

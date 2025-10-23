@@ -61,3 +61,24 @@ $('#portfolio-filter > div').on('click', function () {
         filter: $(this).data('filter')
     });
 });
+
+// swiper
+
+var gallery = new Swiper(".gallery", {
+  loop: true,
+  spaceBetween: 40,
+  slidesPerView: 1,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+var rendersGallery = new Swiper(".rendersGallery", {
+  loop: true,
+  spaceBetween: 40,
+  slidesPerView: 1,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
