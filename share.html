@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Share Gallery</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+</head>
+
+<body>
+
+  <section>
+    <div class="container">
+      <div class="gallery-header mt-5">
+        <h1 class="fw-bold">Renders Gallery</h1>
+        <h3 class="text-primary fw-bold">Design - ویلای حسین</h3>
+        <p class="text-muted">Client: علی آبادی</p>
+        <span class="badge bg-primary">October 10, 2025</span>
+      </div>
+      <div class="gallery-grid">
+        <div class="image-card">
+          <img src="images/68e8cfd249826_17600880184.jpg" alt="Screenshot 2025-09-04 173819.jpg"
+            class="image-preview">
+          <div class="p-3">
+            <h6 class="mb-2">Screenshot 2025-09-04 173819.jpg</h6>
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <div
+                style="width: 24px; height: 24px; border-radius: 50%; background: #10b981; color: white; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 0.7rem;">
+                I </div>
+              <span class="fw-medium" style="color: #10b981;">
+                INVERSE Admin </span>
+              <small class="text-muted">Oct 10 - 09:20</small>
+            </div>
+
+            <!-- Client Comment Form -->
+            <div class="comment-form">
+              <form method="POST">
+                <input type="hidden" name="action" value="add_client_comment">
+                <input type="hidden" name="image_id" value="12">
+                <div class="mb-2">
+                  <input type="text" class="form-control form-control-sm" name="client_name" placeholder="Your name..."
+                    required="">
+                </div>
+                <div class="mb-2">
+                  <textarea class="form-control form-control-sm" name="comment_text" rows="2"
+                    placeholder="Add your comment..." required=""></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-sm w-100 d-flex align-items-center justify-content-center gap-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                      class="transition bi bi-chat-dots-fill" viewBox="0 0 16 16">
+                                      <path
+                                        d="M16 8c0 3.866-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                                    </svg>Add Comment
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

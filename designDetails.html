@@ -239,11 +239,11 @@
           <div class="mb-4 bg-light rounded-8 p-3">
             <img alt="img" src="images/68edcb68598e7_17604145685.jpg"
               class="w-100 max-h-70vh rounded-8 d-block shadow-3 max-h-400">
-            <h3 class="mt-3 text-center fw-bold">01.jpg</h3>
+            <h3 class="mt-4 text-center fw-bold mb-3">01.jpg</h3>
             <div class="d-flex align-items-center justify-content-center gap-3 mb-1 flex-wrap fw-bold">
               <div class="user-avatar w-24 h-24">I</div>
               <div>
-                <div class="d-flex align-items-center gap-2 text-muted small flex-wrap">
+                <div class="d-flex align-items-center gap-2 text-muted small flex-wrap fs-sm-12">
                   <span class="fw-medium text-dark">INVERSE Admin</span>
                   <span>•</span>
                   <span class="text-muted">Oct 14, 2025 - 04:02</span>
@@ -276,14 +276,14 @@
             </div>
           </div>
           <div class="comments-list">
-            <div class="comment-item">
-              <div class="d-flex align-items-start gap-3">
-                <div class="comment-avatar" style="background: #2563eb;">
+            <div class="comment-item mb-3">
+              <div class="d-flex align-items-start gap-3 bg-light p-4 rounded-8">
+                <div class="comment-avatar w-40 h-40 rounded-circle d-flex align-items-center justify-content-center text-white flex-shrink-0" style="background: #2563eb;">
                   I </div>
                 <div class="flex-grow-1">
-                  <div class="d-flex justify-content-between align-items-center mb-2">
-                    <div class="d-flex align-items-center gap-2">
-                      <div class="fw-semibold">INVERSE Admin</div>
+                  <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-1">
+                    <div class="d-flex align-items-center gap-2 flex-wrap">
+                      <div class="fw-bold">INVERSE Admin</div>
                     </div>
                     <small class="text-muted">Oct 14, 2025 - 04:03</small>
                   </div>
@@ -291,14 +291,109 @@
                 </div>
               </div>
             </div>
-            <div class="comment-item">
-              <div class="d-flex align-items-start gap-3">
-                <div class="comment-avatar" style="background: #2563eb;">
+            <div class="comment-item mb-3">
+              <div class="d-flex align-items-start gap-3 bg-light p-4 rounded-8">
+                <div class="comment-avatar w-40 h-40 rounded-circle d-flex align-items-center justify-content-center text-white flex-shrink-0" style="background: #2563eb;">
                   I </div>
                 <div class="flex-grow-1">
-                  <div class="d-flex justify-content-between align-items-center mb-2">
-                    <div class="d-flex align-items-center gap-2">
-                      <div class="fw-semibold">INVERSE Admin</div>
+                  <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-1">
+                    <div class="d-flex align-items-center gap-2 flex-wrap">
+                      <div class="fw-bold">INVERSE Admin</div>
+                    </div>
+                    <small class="text-muted">Oct 22, 2025 - 16:29</small>
+                  </div>
+                  <div class="comment-text">nghg</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+   <div class="modal fade" id="comment2Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog max-w-800">
+      <form class="modal-content border-0 rounded-16 ">
+        <div class="modal-header gap-3 justify-content-start align-items-center">
+          <button type="button"
+            class="ms-0 d-flex align-items-center justify-content-center gap-1 transition border-secondary border p-0 btn btn-outline-secondary w-80 h-38 rounded-8"
+            data-bs-dismiss="modal" aria-label="Close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+              class="bi bi-arrow-left-short flex-shrink-0" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5" />
+            </svg>
+            <p class="mb-0">Back</p>
+          </button>
+          <div>
+            <h3 class="modal-title fs-20 fw-bold" id="exampleModalLabel">Render Comments</h3>
+            <p class="mb-0 text-muted">Design - ویلای حسین</p>
+          </div>
+        </div>
+        <div class="modal-body p-4">
+          <div class="mb-4 bg-light rounded-8 p-3">
+            <img alt="img" src="images/68e8cfd249826_17600880184.jpg"
+              class="w-100 max-h-70vh rounded-8 d-block shadow-3 max-h-400">
+            <h3 class="mt-4 text-center fw-bold mb-3">Screenshot 2025-09-04 173819.jpg</h3>
+            <div class="d-flex align-items-center justify-content-center gap-3 mb-1 flex-wrap fw-bold">
+              <div class="user-avatar w-24 h-24">I</div>
+              <div>
+                <div class="d-flex align-items-center gap-2 text-muted small flex-wrap fs-sm-12">
+                  <span class="fw-medium text-dark">INVERSE Admin</span>
+                  <span>•</span>
+                  <span class="text-muted">Oct 14, 2025 - 04:02</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="card-body">
+              <form method="POST">
+                <input type="hidden" name="action" value="add_comment">
+                <div class="d-flex gap-3">
+                  <div
+                    class="comment-avatar w-40 h-40 bg-blue rounded-circle d-flex align-items-center justify-content-center text-white">
+                    I </div>
+                  <div class="flex-grow-1">
+                    <textarea class="form-control mb-2" name="comment_text" rows="3" placeholder="Add your comment..."
+                      required=""></textarea>
+                    <button type="submit" class="btn btn-primary d-flex align-items-center justify-content-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chat-fill me-2" viewBox="0 0 16 16">
+                        <path
+                          d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9 9 0 0 0 8 15" />
+                      </svg>
+                      Add Comment
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="comments-list">
+            <div class="comment-item mb-3">
+              <div class="d-flex align-items-start gap-3 bg-light p-4 rounded-8">
+                <div class="comment-avatar w-40 h-40 rounded-circle d-flex align-items-center justify-content-center text-white flex-shrink-0" style="background: #2563eb;">
+                  I </div>
+                <div class="flex-grow-1">
+                  <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-1">
+                    <div class="d-flex align-items-center gap-2 flex-wrap">
+                      <div class="fw-bold">INVERSE Admin</div>
+                    </div>
+                    <small class="text-muted">Oct 14, 2025 - 04:03</small>
+                  </div>
+                  <div class="comment-text">ghrghdrtgh</div>
+                </div>
+              </div>
+            </div>
+            <div class="comment-item mb-3">
+              <div class="d-flex align-items-start gap-3 bg-light p-4 rounded-8">
+                <div class="comment-avatar w-40 h-40 rounded-circle d-flex align-items-center justify-content-center text-white flex-shrink-0" style="background: #2563eb;">
+                  I </div>
+                <div class="flex-grow-1">
+                  <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-1">
+                    <div class="d-flex align-items-center gap-2 flex-wrap">
+                      <div class="fw-bold">INVERSE Admin</div>
                     </div>
                     <small class="text-muted">Oct 22, 2025 - 16:29</small>
                   </div>
@@ -1184,7 +1279,7 @@
                           </svg>October 14, 2025 <span class="badge bg-light text-dark ms-2">1
                             renders</span>
                         </h6>
-                        <a href="uploads/files/68f532c4f0d31_1760899780.pdf"
+                        <a href="share.html"
                           class="btn btn-sm btn-outline-primary rounded-12 py-2 px-3 fw-bold d-flex align-items-center justify-content-center gap-1"
                           download="" title="Download">
                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -1222,7 +1317,7 @@
                                   <small class="text-muted">04:02</small>
                                 </div>
                                 <div class="d-flex gap-1">
-                                  <button data-bs-toggle="modal" data-bs-target="#commentModal"
+                                  <button data-bs-toggle="modal" data-bs-target="#comment2Modal"
                                     class="btn btn-sm btn-outline-primary w-49 h-40 rounded-12 d-flex align-items-center justify-content-center"
                                     title="Comments">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
