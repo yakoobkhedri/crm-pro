@@ -555,10 +555,14 @@ input[type=number] {
   border-color: #2563eb;
 }
 
+/* swiper */
+.swiper-button-next::after, .swiper-button-prev::after {
+  color: white;
+}
+
 /* folder */
 
   .folder-container {
-            max-width: 1200px;
             margin: 0 auto;
             background: white;
             border-radius: 12px;
