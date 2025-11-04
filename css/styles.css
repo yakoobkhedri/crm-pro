@@ -679,10 +679,6 @@ input[type=number] {
     transition: all 0.3s ease;
 }
 
-.cursor-pointer {
-    cursor: pointer;
-}
-
 .file-item {
     border: none;
     border-radius: 8px;
@@ -794,7 +790,10 @@ input[type=number] {
     opacity: 0;
     cursor: pointer;
 }
-
+/* dropdown */
+.dropdown-toggle::after {
+  content: none;
+}
 /* tab */
 .tab {
     color: #6b7280;
