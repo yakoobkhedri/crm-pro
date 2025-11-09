@@ -61,7 +61,12 @@ $('#portfolio-filter > div').on('click', function () {
         filter: $(this).data('filter')
     });
 });
-
+// مقداردهی اولیه Isotope بدون انیمیشن
+var $grid = $('#portfolio-container').isotope({
+  itemSelector: '.col-md-6',
+  layoutMode: 'fitRows',
+  transitionDuration: 0 // غیرفعال کردن انیمیشن
+});
 // swiper
 
 var gallery = new Swiper(".gallery", {
